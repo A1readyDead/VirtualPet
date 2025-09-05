@@ -10,8 +10,6 @@ public void setup(){
 public void draw(){
 int y = arduino.analogRead(5);
     System.out.println(y);
-fill(#000000);
-quad(0, 0, 500, 0, 500, y, 0, y);
   fill(#F05757);
   stroke(#050000);
     ellipse(200,175,125,120);
@@ -37,3 +35,12 @@ stroke(#050000);
 triangle(50,200,120,250,105,300);
 triangle(400,150,350,210,385,260);
 }
+int y = 0;
+while (y < 100){
+  fill(204, 102, 0);
+  quad (0, 0, 500, 0, 0, y, 500, y):
+    y = y + 10;
+}
+while (y > 50){
+  fill(98,206,104);
+  
