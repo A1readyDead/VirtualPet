@@ -16,11 +16,6 @@ fill(#F05757);
   stroke(#050000);
     ellipse(200,175,125,120);
     ellipse(250,325,300,300);
-   //eyes
-  fill(#745BDB);
-  noStroke();
-    ellipse(250,125,50,50);
-    ellipse(150,150,50,50);
 
   fill(#D7F0F5);
     noStroke();
@@ -35,6 +30,13 @@ fill(#F05757);
 stroke(#050000);
 triangle(50,200,120,250,105,300);
 triangle(400,150,350,210,385,260);
-}
 
+  //eyes
+  noFill();
+  fill(0,0,255);
+  noStroke();
+    ellipse(250,125,50,50+(y+1)/4);
+    ellipse(150,150,50,50+(y+1)/4);
+
+}
 
